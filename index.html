@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <style>
+    #logs div {
+      font-size: 15px;
+    }
+    </style>
+  </head>
+  <body>
+    <div id="logs">
+    </div>
+    <script>
+    setInterval(() => {
+      const log = document.createElement('div');
+      log.innerText = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit';
+
+      document.getElementById('logs').appendChild(log);
+    }, 1000);
+    </script>
+  </body>
+</html>
